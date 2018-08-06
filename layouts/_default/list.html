@@ -44,14 +44,6 @@
         {{- if .Params.image }}
         <a href="{{ .Permalink | relURL }}"><img src="{{ .Params.image }}" class="article-image" /></a>
         {{- end }}
-        <div class="article-content">
-          {{- if .Truncated }}
-          {{ .Summary }}
-          {{- else }}
-          {{ .Content }}
-          {{- end }}
-        </div>
-        <div class="article-readmore"><a href="{{ .Permalink | relURL }}">Read more...</a></div>
         <div class="article-floatclear"></div>
       </article>
       {{- end }}
